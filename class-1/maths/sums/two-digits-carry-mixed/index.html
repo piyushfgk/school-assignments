@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Practice Sheet</title>
+    <style>
+    /* Main body for full-width printing */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0; /* Remove default browser margin */
+        padding: 1.5cm; /* Add padding to act as a print margin */
+        box-sizing: border-box; /* Ensures padding is included in the total width */
+    }
+
+    /* Header: Title, Name, Date */
+    .title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .header-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    
+    .header-info span {
+        width: 45%;
+        border-bottom: 2px solid #555;
+        padding-bottom: 3px;
+    }
+
+    /* Instructions */
+    .instructions {
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 40px;
+        color: #444;
+        line-height: 1.5;
+    }
+
+    /* Main Grid for all problems */
+    .problem-grid {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .problem-grid td {
+        width: 33.33%;
+        padding: 20px 10px; /* Space between rows */
+        vertical-align: top;
+        text-align: center;
+    }
+    
+    /* Individual Sum Table */
+    .sum-table {
+        margin: 0 auto; /* Center the table in its cell */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .sum-table td {
+        padding: 4px 6px;
+        text-align: right;
+    }
+    
+    .operator {
+        text-align: left;
+    }
+    
+    .line-row td {
+        padding: 0;
+        border-top: 2px solid black;
+    }
+
+    /* The space for the answer between two lines */
+    .answer-space {
+        height: 40px; /* Space for the child to write */
+        border-bottom: 2px solid black;
+    }
+
+    /* Footer Message */
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #5C5CFF;
+    }
+</style>
+</head>
+<body>
+    <div class="sheet">
+        <h1 class="title">Addition Practice: Let's Add!</h1>
+
+        <div class="header-info">
+            <span>Name:</span>
+            <span>Date:</span>
+        </div>
+        
+        <p class="instructions">
+            Hello, my little math wizards! Solve the sums below. Remember our magic rule:<br>
+            If the ones add up to <b>10 or more</b>, carry the <b>1</b> over to the tens' house!
+        </p>
+
+        <table class="problem-grid">
+            <!-- Row 1 -->
+            <tr>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>2</td><td>7</td></tr>
+                        <tr><td class="operator">+</td><td>3</td><td>5</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>4</td><td>2</td></tr>
+                        <tr><td class="operator">+</td><td>1</td><td>4</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>1</td><td>6</td></tr>
+                        <tr><td class="operator">+</td><td></td><td>8</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>5</td><td>9</td></tr>
+                        <tr><td class="operator">+</td><td>2</td><td>3</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>7</td><td>0</td></tr>
+                        <tr><td class="operator">+</td><td>2</td><td>9</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>3</td><td>1</td></tr>
+                        <tr><td class="operator">+</td><td>4</td><td>8</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>6</td><td>4</td></tr>
+                        <tr><td class="operator">+</td><td></td><td>7</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>1</td><td>5</td></tr>
+                        <tr><td class="operator">+</td><td>5</td><td>5</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>8</td><td>8</td></tr>
+                        <tr><td class="operator">+</td><td>0</td><td>4</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>3</td><td>6</td></tr>
+                        <tr><td class="operator">+</td><td>4</td><td>1</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>2</td><td>2</td></tr>
+                        <tr><td class="operator">+</td><td>6</td><td>8</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>4</td><td>9</td></tr>
+                        <tr><td class="operator">+</td><td>3</td><td>9</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Row 5 -->
+            <tr>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>8</td><td>3</td></tr>
+                        <tr><td class="operator">+</td><td>1</td><td>5</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>5</td><td>7</td></tr>
+                        <tr><td class="operator">+</td><td>3</td><td>6</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>9</td><td>2</td></tr>
+                        <tr><td class="operator">+</td><td></td><td>7</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <p class="footer">
+            You are doing a fantastic job! Keep practicing! ⭐
+        </p>
+        
+    </div>
+</body>
+</html>
