@@ -66,4 +66,4 @@ When adding new assignments, please follow this structure:
 
 ---
 
-*Last updated: December 2024*
+*Last updated: September 2025*
