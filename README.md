@@ -2,9 +2,22 @@
 
 A comprehensive collection of educational resources and practice sheets organized by class, subject, and topic with full navigation support.
 
+## 🌐 Live Website
+
+**👉 [Visit the Live Website](https://piyushfgk.github.io/school-assignments) 👈**
+
+Browse the complete navigation system, access all worksheets, and experience the full interactive features online.
+
+### ✨ What You'll Find:
+- **Complete Navigation System** with breadcrumb navigation
+- **Interactive Worksheets** optimized for printing
+- **Responsive Design** that works on all devices
+- **Professional Layout** with clean black and white theme
+- **Print-Friendly** worksheets with hidden navigation during printing
+
 ## 🚀 Quick Start
 
-1. **Start Here**: Open [index.html](index.html) in your browser
+1. **Start Here**: Visit the [live website](https://piyushfgk.github.io/school-assignments) or open [index.html](index.html) locally
 2. **Navigate**: Use the breadcrumb navigation to explore different levels
 3. **Practice**: Access worksheets and complete assignments
 4. **Print**: All worksheets are optimized for printing
@@ -37,7 +50,7 @@ School Assignments (Root)
 
 | # | Topic | Description | Link |
 |---|-------|-------------|------|
-| 1 | Two Digit Carry (Re Grouping) and Non Carry Mixed | Mixed two-digit addition problems with both carry and non-carry scenarios. Includes 15 practice problems with space for answers. | [View Worksheets](class-1/maths/sums/two-digits-carry-mixed/) |
+| 1 | Two Digit Carry (Re Grouping) and Non Carry Mixed | Mixed two-digit addition problems with both carry and non-carry scenarios. Includes 15 practice problems with space for answers. | [View Worksheets](https://piyushfgk.github.io/school-assignments/class-1/maths/sums/two-digits-carry-mixed/) |
 
 ## 🎯 About This Repository
 
