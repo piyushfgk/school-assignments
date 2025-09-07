@@ -1,0 +1,128 @@
+/* Shared CSS for all index pages */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Table styles - using generic class names for different content types */
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    table-layout: fixed;
+}
+
+.content-table th {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.content-table td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.content-table tr:hover {
+    background-color: #f0f0f0;
+}
+
+.content-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.content-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.content-description {
+    color: black;
+    font-style: italic;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.breadcrumb {
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+.breadcrumb-current {
+    color: #666;
+    font-weight: normal;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    color: black;
+}
