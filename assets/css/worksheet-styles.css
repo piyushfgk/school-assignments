@@ -8,6 +8,13 @@ body {
     box-sizing: border-box; /* Ensures padding is included in the total width */
 }
 
+/* Sheet container for better alignment */
+.sheet {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Header: Title, Name, Date */
 .title {
     text-align: center;
@@ -20,15 +27,34 @@ body {
 .header-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 25px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .header-info span {
-    width: 45%;
-    border-bottom: 2px solid #555;
-    padding-bottom: 3px;
+    flex: 1;
+    text-align: left;
+    margin: 0 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.header-info span::after {
+    content: "________________";
+    margin-left: 8px;
+    border: none;
+    flex: 1;
+    min-width: 120px;
+    max-width: 200px;
 }
 
 /* Instructions */
@@ -43,12 +69,14 @@ body {
 /* Main Grid for all problems */
 .problem-grid {
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
 .problem-grid td {
-    width: 33.33%;
-    padding: 20px 10px; /* Space between rows */
+    width: 25%;
+    padding: 15px 8px; /* Space between rows */
     vertical-align: top;
     text-align: center;
 }
@@ -111,9 +139,44 @@ body {
     color: white;
 }
 
-/* Hide back button when printing */
+/* PDF and Print Buttons */
+.pdf-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.pdf-button, .print-button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+}
+
+.pdf-button:hover, .print-button:hover {
+    background-color: #1976D2;
+    color: white;
+}
+
+.pdf-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Hide buttons when printing */
 @media print {
-    .back-button {
+    .back-button,
+    .pdf-controls {
         display: none;
     }
 }

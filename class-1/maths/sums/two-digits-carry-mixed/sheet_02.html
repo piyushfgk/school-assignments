@@ -9,10 +9,17 @@
 <body>
     <a href="index.html" class="back-button">← Back to Worksheets</a>
     
+    <!-- PDF Controls -->
+    <div class="pdf-controls">
+        <button id="pdf-button" class="pdf-button" onclick="generatePDF()">📄 Download PDF</button>
+        <button class="print-button" onclick="printWorksheet()">🖨️ Print</button>
+    </div>
+    
     <div class="sheet">
         <h1 class="title">Addition Practice: Let's Add More!</h1>
 
         <div class="header-info">
+            <span>Class:</span>
             <span>Name:</span>
             <span>Date:</span>
         </div>
@@ -49,6 +56,14 @@
                         <tr><td colspan="3" class="answer-space"></td></tr>
                     </table>
                 </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>2</td><td>4</td></tr>
+                        <tr><td class="operator">+</td><td>6</td><td>8</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
             </tr>
             <!-- Row 2 -->
             <tr>
@@ -72,6 +87,14 @@
                     <table class="sum-table">
                         <tr><td></td><td>8</td><td>4</td></tr>
                         <tr><td class="operator">+</td><td>2</td><td>7</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>9</td><td>2</td></tr>
+                        <tr><td class="operator">+</td><td>3</td><td>5</td></tr>
                         <tr class="line-row"><td colspan="3"></td></tr>
                         <tr><td colspan="3" class="answer-space"></td></tr>
                     </table>
@@ -103,6 +126,14 @@
                         <tr><td colspan="3" class="answer-space"></td></tr>
                     </table>
                 </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>4</td><td>3</td></tr>
+                        <tr><td class="operator">+</td><td>7</td><td>2</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
             </tr>
             <!-- Row 4 -->
             <tr>
@@ -126,6 +157,14 @@
                     <table class="sum-table">
                         <tr><td></td><td>8</td><td>2</td></tr>
                         <tr><td class="operator">+</td><td>1</td><td>8</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>6</td><td>1</td></tr>
+                        <tr><td class="operator">+</td><td>4</td><td>9</td></tr>
                         <tr class="line-row"><td colspan="3"></td></tr>
                         <tr><td colspan="3" class="answer-space"></td></tr>
                     </table>
@@ -157,6 +196,14 @@
                         <tr><td colspan="3" class="answer-space"></td></tr>
                     </table>
                 </td>
+                <td>
+                    <table class="sum-table">
+                        <tr><td></td><td>1</td><td>7</td></tr>
+                        <tr><td class="operator">+</td><td>8</td><td>3</td></tr>
+                        <tr class="line-row"><td colspan="3"></td></tr>
+                        <tr><td colspan="3" class="answer-space"></td></tr>
+                    </table>
+                </td>
             </tr>
         </table>
 
@@ -165,5 +212,10 @@
         </p>
         
     </div>
+
+    <!-- PDF Generation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="/school-assignments/assets/js/pdf-generator.js"></script>
 </body>
 </html>
